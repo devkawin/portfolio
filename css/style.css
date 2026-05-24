@@ -72,6 +72,13 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
+body {
+
+    overflow-x: hidden;
+    width: 100%;
+}
+
 
 /* =========================
    NAVBAR
@@ -102,6 +109,74 @@ html {
     color: var(--secondary-text);
     margin-left: 16px;
     transition: 0.3s ease;
+}
+
+section {
+
+    overflow-x: hidden;
+}
+
+.row {
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.custom-modal-content {
+
+    max-width: 100%;
+}
+
+.timeline-wrapper {
+
+    overflow: hidden;
+}
+
+.glow,
+.footer-glow {
+
+    pointer-events: none;
+}
+
+/* =========================
+   MOBILE OVERFLOW FIX
+========================= */
+
+html,
+body {
+
+    overflow-x: hidden;
+    width: 100%;
+}
+
+section {
+
+    overflow-x: hidden;
+}
+
+.row {
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.timeline-wrapper,
+.works-section,
+.footer-section,
+.hero-section {
+
+    overflow: hidden;
+}
+
+.custom-modal-content {
+
+    max-width: 100%;
+}
+
+.glow,
+.footer-glow {
+
+    pointer-events: none;
 }
 
 .nav-link {
@@ -2105,7 +2180,7 @@ html {
 
     #html5Frame {
         width: 300px;
-        height: 450px;
+        height: 600px;
     }
 
     .work-block-title h3 {
@@ -2988,4 +3063,174 @@ html {
         right: 20px;
         bottom: 20px;
     }
+}
+
+/* =========================
+   HERO FLOATING TAGS FIX
+========================= */
+
+@media(max-width: 991px) {
+
+    .floating-badge {
+
+        transform: scale(0.85);
+    }
+
+    /* TOP */
+
+    .badge-1 {
+
+        top: -20px;
+        right: 40%;
+    }
+
+    /* RIGHT */
+
+    .badge-2 {
+
+        right: -10px;
+        top: 28%;
+    }
+
+    /* LEFT */
+
+    .badge-3 {
+
+        left: -10px;
+        top: 45%;
+    }
+
+    /* BOTTOM LEFT */
+
+    .badge-4 {
+
+        left: 0;
+        bottom: 15%;
+    }
+
+    /* BOTTOM */
+
+    .badge-5 {
+
+        bottom: -25px;
+        left: 40%;
+    }
+}
+
+@media(max-width: 576px) {
+
+    .floating-badge {
+
+        transform: scale(0.75);
+    }
+
+    /* Hide extra badges */
+
+    .badge-2,
+    .badge-3 {
+
+        display: none;
+    }
+
+    /* Reposition */
+
+    .badge-1 {
+
+        top: -15px;
+        right: 35%;
+    }
+
+    .badge-4 {
+
+        left: 10px;
+        bottom: 12%;
+    }
+
+    .badge-5 {
+
+        bottom: -20px;
+        left: 35%;
+    }
+}
+
+/* =========================
+   HERO FLOATING BADGES FIX
+========================= */
+
+/* Image Wrapper */
+
+.hero-image-wrapper {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Floating Badges */
+
+.floating-badge {
+
+    position: absolute;
+
+    z-index: 10;
+    background:
+        rgba(15, 23, 42, 0.72);
+
+
+    backdrop-filter: blur(16px);
+
+    -webkit-backdrop-filter: blur(16px);
+}
+
+/* =========================
+   LOGO FIX
+========================= */
+
+.logo,
+.navbar-brand {
+
+    color: #fff !important;
+
+    text-decoration: none;
+}
+
+
+/* Hover */
+
+.logo:hover,
+.navbar-brand:hover {
+
+    color: #fff !important;
+}
+
+
+/* Active */
+
+.logo:active,
+.navbar-brand:active {
+
+    color: #fff !important;
+}
+
+
+/* Focus */
+
+.logo:focus,
+.navbar-brand:focus {
+
+    color: #fff !important;
+
+    outline: none;
+
+    box-shadow: none;
+}
+
+
+/* Visited */
+
+.logo:visited,
+.navbar-brand:visited {
+
+    color: #fff !important;
 }
