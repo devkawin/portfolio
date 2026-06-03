@@ -1,0 +1,204 @@
+@charset "UTF-8"; /* CSS Document Common Elements Reset */
+iframe {
+    border: 0;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    border-style: none;
+    outline: 0px;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body {
+    position: absolute;
+    background: #ffffff;
+    background-color: transparent;
+    /* below improves consistancey of font rendering across browsers */
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    /* below stops FireFox rendering copy too heavily */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#mainContainer {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 300px;
+    height: 600px;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #eb1000;
+    opacity: 0;
+}
+
+.abs {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#model, #modelBg, #redbg {
+    transform: scale(1.18);
+}
+
+/* #redbg{
+    background: #eb1000;
+    width: 100%;
+    height: 92px;
+    top: 272px;
+    position: absolute;
+} */
+#modelContainer {
+}
+
+#message1, #message3 {
+    transform-origin: 150px 426px;
+    filter: blur(2px);
+}
+
+#message2 {
+    transform-origin: 150px 466px;
+    filter: blur(2px);
+}
+
+#message4 {
+    transform-origin: 150px 456px;
+    filter: blur(2px);
+}
+
+#mobileCopyContainer {
+    width: 134px;
+    height: 30px;
+    position: absolute;
+    top: 400px;
+    transform: translate(67px, -42px) rotate(-24deg);
+}
+
+#mobileCopy1 {
+    width: 300px;
+    /* transform: translate(-217px, -657px) scale(0.5); */
+    /* clip: rect(0px,400px,780px,0px); */
+    position: relative;
+    top: -357px;
+    left: -68px;
+}
+
+#mobileCopy2 {
+    width: 250px;
+    /* transform: translate(-217px, -657px) scale(0.5); */
+    /* clip: rect(0px,400px,780px,0px); */
+    position: relative;
+    top: -296px;
+    left: -44px;
+}
+
+#blueBg {
+    width: 0;
+    height: 100%;
+    background: #577599;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#spriteContainer {
+    width: 200px;
+    height: 59px;
+    top: 423px;
+    position: absolute;
+    overflow: hidden;
+    transform: scale(1.48);
+    left: 51px;
+    display: none;
+}
+
+#sprite {
+    width: auto;
+    height: 100%;
+}
+
+#message4Container {
+    width: 278px;
+    height: 73px;
+    background: #ffffff;
+    position: absolute;
+    top: 415px;
+    left: 10px;
+    box-sizing: border-box;
+    border: 2px solid #2075e1;
+}
+
+#message4Copy1, #message4Copy2 {
+    width: 300px;
+    top: -418px;
+    left: -12px;
+    position: relative;
+}
+
+#message4CopyContainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid #2075e1;
+    border-radius: 50%;
+}
+
+#leftTopCircle {
+    left: -7px;
+    top: -7px;
+}
+
+#leftBottomCircle {
+    bottom: -7px;
+    left: -7px;
+}
+
+#rightTopCircle {
+    right: -7px;
+    top: -7px;
+}
+
+#rightBottomCircle {
+    right: -7px;
+    bottom: -7px;
+}
+
+#mobileCopyInnerContainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

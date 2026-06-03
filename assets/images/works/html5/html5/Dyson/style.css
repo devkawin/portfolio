@@ -1,0 +1,241 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+/* Web Fonts */
+
+@media screen and (max-device-width: 480px) {
+    body {
+        -webkit-text-size-adjust: none;
+    }
+}
+
+
+@font-face {
+    font-family: "FuturaBT-Medium";
+    src: url("fonts/subset-FuturaBTforDysonW05-Medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "FuturaBT-Book";
+    src: url("fonts/subset-FuturaBTforDysonW05-Book.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "FuturaBT-Light";
+    src: url("fonts/subset-FuturaBTforDysonW05-Light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html, body {
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    border: 0px;
+}
+
+#background_exit_dc {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    background: #fff;
+    z-index: 100;
+}
+
+#outer_wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#inner_wrapper {
+    display: none;
+}
+
+
+.retina {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+
+    /* transform: rotate3d(1, 1, 1, .01deg); */
+    -moz-transform: rotate3d(1, 1, 1, .01deg);
+    /* -webkit-transform: rotate3d(1, 1, 1, .01deg); */
+}
+
+.fades {
+    opacity: 0;
+}
+
+.absolute {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+}
+
+#black_bg {
+    background: black;
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+}
+
+#white_bg {
+    background: white;
+}
+
+.mask {
+    overflow: hidden;
+}
+
+#bg_container {
+    top: 180px;
+    width: 300px;
+    height: 420px;
+}
+
+#line_container {
+    left: unset;
+    right: 0;
+    width: 300px;
+    height: 600px;
+}
+/* copies */
+#copyContainer{
+    position: absolute;
+    width: 90%; 
+    top: 77px;
+    left:19px;
+}
+
+
+.copy {
+    font-family: "FuturaBT-Book";
+    font-size: 28px;
+    line-height: 1.15;
+    color: #000000;
+    text-align: left;
+    text-rendering: geometricPrecision;
+    position: absolute;
+}
+
+.copy sup {
+    font-size: .6em;
+    line-height: 1.6em;
+    vertical-align: top;
+    position: relative;
+
+}
+
+#copy01{
+    font-family: "FuturaBT-Medium";
+}
+#copy01 span{
+    font-family: "FuturaBT-Book";
+    position: relative;
+    display: block;
+    top: 7px;
+}
+#copy04 span{
+    position: relative;
+    top: 13px;
+    font-size: 15px;
+    display: block;
+}
+#cta_copy{
+    font-family: "FuturaBT-Light";
+    font-size: 20px;
+    color: #000;
+    position: absolute;
+    top: 213px;
+    left: 53px;
+    height: auto;
+    width: auto;
+}
+
+#footer{
+    color: #fff;
+    font-family: "FuturaBT-Book";
+}
+#rtbText{
+    top: auto;
+    bottom: 13px;
+    height: auto;
+    left: 52px;
+    font-size: 14px;
+}
+/* ----------- BORDER ---------------- */
+#border {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #D3D3D3;
+    z-index: 999;
+    opacity:1;
+    pointer-events:none;
+}
